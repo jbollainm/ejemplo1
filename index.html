@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo HTML para Estudiantes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenidos a la Demo de HTML y CSS</h1>
+      <nav>
+        <ul type="none">
+          <li><a href="#intro">Introducción</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#tabla">Tabla de Datos</a></li>
+          <li><a href="#formulario">Formulario</a></li>
+          <li><a href="#grid">Ejemplo de Grid</a></li>
+          <li>
+            <a href="https://www.google.com" target="_blank">Ir a Google</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro">
+        <h2>Introducción</h2>
+        <p>
+          Este es un ejemplo de cómo podemos estructurar una página web usando
+          HTML y CSS. Veremos cómo aplicar estilos para mejorar su apariencia y
+          funcionalidad.
+        </p>
+        <div class="galeria">
+          <img src="Fondo de pantalla.jpg" alt="Imagen de ejemplo" />
+          <img src="imagen2.jpg" alt="Imagen de ejemplo" />
+          <img src="imagen3.jpg" alt="Imagen de ejemplo" />
+        </div>
+      </section>
+
+      <section id="multimedia">
+        <h2>Contenido Multimedia</h2>
+        <video width="400" controls autoplay muted>
+          <source src="Presentación de la asignatura.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section id="tabla">
+        <h2>Ejemplo de Tabla</h2>
+        <table>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+          </tr>
+          <tr>
+            <td>Juan</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>María</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Ana</td>
+            <td>28</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="formulario">
+        <h2>Formulario de Contacto</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <section id="grid">
+        <h2>Ejemplo de Grid</h2>
+        <div class="grid-container">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+        </div>
+      </section>
+      <section>
+        <h2>Ejemplo de botón con hover</h2>
+        <button class="btn-hover" onclick="alert('¡Hola, estudiante!')">
+          Haz clic aquí
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Demo HTML y CSS para Estudiantes</p>
+    </footer>
+  </body>
+</html>
